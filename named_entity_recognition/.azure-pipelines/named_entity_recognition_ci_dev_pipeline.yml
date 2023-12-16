@@ -24,7 +24,7 @@ parameters:
  - name: flow_to_execute
    displayName: "flow to execute"
    default: "named_entity_recognition"
- - name: IS_KUBERNETES_DEPLOYMENT
+ - name: deployment_type
    displayName: "determine managed or kubernetes deployment"
    default: "False"
 
@@ -36,4 +36,4 @@ stages:
     parameters:
       exec_environment: ${{ parameters.env_name }}
       flow_to_execute: ${{ parameters.flow_to_execute }}
-      IS_KUBERNETES_DEPLOYMENT: ${{ parameters.IS_KUBERNETES_DEPLOYMENT }}
+      deployment_type: ${{ parameters.deployment_type }}
