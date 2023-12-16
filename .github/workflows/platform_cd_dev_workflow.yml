@@ -42,10 +42,6 @@ jobs:
     steps:
       - name: Checkout Actions
         uses: actions/checkout@v4
-      - name: Azure login
-        uses: azure/login@v1
-        with:
-          creds: ${{ secrets.azure_credentials }}
       #=====================================
       # Executed Kubernetes deployment when parameter IS_KUBERNETES_DEPLOYMENT == 'True'
 
